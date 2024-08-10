@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfefe;
+}
+
+.homepage {
+  display: grid;
+}
+
+.banner {
+  background-color: #1f618d;
+  color: #fdfefe;
+}
+
+.main-content {
+  background-color: #73c6b6;
+}
+
+.hours {
+  background-color: #cdb96b;
+}
+
+.location {
+  background-color: #aab7b8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
