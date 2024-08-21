@@ -8,24 +8,30 @@ body {
   background-color: #fdfefe;
 }
 
-.homepage {
+nav button {
+  /* border: none; */
+  padding: 5px;
+  margin: 5px;
+}
+
+#homepage {
   display: grid;
 }
 
-.banner {
+#banner {
   background-color: #1f618d;
   color: #fdfefe;
 }
 
-.main-content {
+#main-content {
   background-color: #73c6b6;
 }
 
-.hours {
+#hours {
   background-color: #cdb96b;
 }
 
-.location {
+#location {
   background-color: #aab7b8;
   display: grid;
   grid-template-columns: 1fr 1fr;

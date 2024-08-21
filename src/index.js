@@ -1,10 +1,24 @@
-import { homepageRender } from './homepage';
+import { homepageRender } from './pages/homepage';
+import { menuPageRender } from './pages/menuPage';
+import { aboutPageRender } from './pages/aboutPage';
 import './styles/styles.css';
-import mapImg from './assets/map.gif';
+
+export const container = document.getElementById('content');
+const pageDisplay = document.getElementById('content');
+const navigation = document.querySelector('nav');
 
 homepageRender();
 
-const map = document.getElementById('map-image');
-map.src = mapImg;
+navigation.addEventListener('click', (e) => {
+  if (!e.target.closest('button')) return;
 
-console.log('Hello!');
+  let navBtn = e.target.closest('button').textContent;
+
+  pageDisplay.innerHTML = '';
+
+  if (navBtn === 'Home') homepageRender();
+  if (navBtn === 'Menu') menuPageRender();
+  if (navBtn === 'About') aboutPageRender();
+});
+
+// STEP 7 NEXT
