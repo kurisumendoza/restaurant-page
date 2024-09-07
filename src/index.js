@@ -21,4 +21,4 @@ navigation.addEventListener('click', (e) => {
   if (navBtn === 'About') aboutPageRender();
 });
 
-// STEP 7 NEXT
+// Add Design NEXT

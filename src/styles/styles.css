@@ -2,37 +2,118 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 body {
   background-color: #fdfefe;
 }
 
-nav button {
-  /* border: none; */
-  padding: 5px;
-  margin: 5px;
+nav {
+  background-color: #444444;
+  padding: 0.5rem;
 }
 
-#homepage {
+nav button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+#homepage,
+#menu-page,
+#about-page {
   display: grid;
 }
 
 #banner {
-  background-color: #1f618d;
+  background-color: #444444;
   color: #fdfefe;
+}
+
+#logo {
+  display: block;
+  height: 5rem;
+  margin: 2rem auto 2rem auto;
 }
 
 #main-content {
   background-color: #73c6b6;
+  padding: 2rem;
 }
 
-#hours {
+#main-content img {
+  height: 20rem;
+  margin-right: 2rem;
+}
+
+#cafe-details {
   background-color: #cdb96b;
+  padding: 2rem;
+}
+
+#main-content,
+#cafe-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 #location {
+  margin-bottom: 2rem;
+}
+
+#footer {
+  padding: 2rem;
   background-color: #aab7b8;
+  text-align: center;
+}
+
+#menu-page {
+  background-color: #73c6b6;
+}
+
+#menu-content h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+#menu-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 3rem;
+  margin: 0 10% 2rem 10%;
+  border-radius: 10px;
+}
+
+#menu-list div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#about-content {
+  padding: 2rem;
+  background-color: #cdb96b;
+}
+
+.about-text {
+  background-color: #ffffff;
+  padding: 3rem;
+  margin: 1rem 10%;
+  border-radius: 10px;
+}
+
+.about-text img {
+  display: block;
+  margin: 1rem auto 0 auto;
 }
